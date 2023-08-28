@@ -23,7 +23,7 @@ namespace OrleansWebAPI7AppDemo.Controllers
         [HttpGet()]
         public IEnumerable<string> TestArray()
         {
-            string[] items = new string[] { "確変", "Rush", "大好き" };
+            string[] items = new string[] { "1500", "3000", "4000" };
             return items;
         }
 
