@@ -16,14 +16,14 @@ namespace OrleansWebAPI7AppDemo.Controllers
         [HttpGet()]
         public String TestValue()
         {
-            return "あいうえお";
+            return "パチンコ大好き";
         }
 
 
         [HttpGet()]
         public IEnumerable<string> TestArray()
         {
-            string[] items = new string[] { "あいうえお", "かきくけこ", "さしすせそ" };
+            string[] items = new string[] { "確変", "Rush", "大好き" };
             return items;
         }
 
@@ -31,20 +31,20 @@ namespace OrleansWebAPI7AppDemo.Controllers
         public Animal TestObject()
         {
             Animal animal_1 = new Animal();
-            animal_1.Name = "いぬ";
+            animal_1.Name = "マルハン";
             return animal_1;
         }
 
         [HttpGet()]
         public IActionResult StatusCode()
         {
-            return StatusCode(200);
+            return StatusCode(114514);
         }
 
         [HttpPost()]
         public Animal TestPostObject(Animal animal)
         {
-            animal.Age = 20;
+            animal.Age = 810;
             return animal;
         }
     }
